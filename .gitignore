@@ -1,0 +1,14 @@
+# Logs
+logs/
+*.log
+
+# Playwright specific
+test-results/
+playwright-report/
+trace.zip
+
+# Node modules
+node_modules/
+
+# Environment variables
+.env
