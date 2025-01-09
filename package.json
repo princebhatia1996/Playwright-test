@@ -4,12 +4,15 @@
   "description": "A sample project using Playwright for end-to-end testing.",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test"
-  },
-  "dependencies": {
-    "playwright": "^1.0.0"
+    "test": "playwright test",
+    "test:auth": "playwright test tests/booking-auth.post.spec.ts",
+    "test:post": "playwright test tests/booking.post.spec.ts",
+    "test:get": "playwright test tests/booking.get.spec.ts",
+    "test:api": "playwright test tests/booking*.spec.ts"
   },
   "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.5",
     "typescript": "^4.0.0"
   },
   "keywords": [],
