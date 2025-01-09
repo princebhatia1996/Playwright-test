@@ -1,7 +1,20 @@
 import { test, expect } from "@playwright/test";
-import { getStoredBookingId, getBooking } from "../../helpers/bookingHelper";
+import {
+  createBooking,
+  storeBookingId,
+  getStoredBookingId,
+  getBooking,
+} from "../../helpers/bookingHelper";
 
 test.describe("GET booking/ requests", () => {
+  test.beforeEach(async ({ request }) => {
+    // Create a booking before each test
+    const response = await createBooking(request);
+    const responseBody = await response.json();
+    expect(response.status()).toBe(200);
+    expect(responseBody).toHaveProperty("bookingid");
+    storeBookingId(responseBody.bookingid);
+  });
   test("should return 200 and retrieve the previously created booking", async ({
     request,
   }) => {
