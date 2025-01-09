@@ -13,6 +13,16 @@ export default defineConfig({
       name: "Playwright",
       use: { browserName: "chromium" },
     },
+    {
+      name: "swag-labs",
+      use: {
+        baseURL: "https://www.saucedemo.com/",
+        browserName: "chromium",
+        headless: true,
+        viewport: { width: 1920, height: 1080 },
+      },
+      testMatch: ["**/*swag-labs*.spec.ts"],
+    },
   ],
   reporter: [["list"], ["json", { outputFile: "test-results.json" }]],
 });
