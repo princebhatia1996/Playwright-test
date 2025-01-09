@@ -10,8 +10,13 @@ export default defineConfig({
   },
   projects: [
     {
-      name: "Playwright",
-      use: { browserName: "chromium" },
+      name: "api",
+      testDir: "tests/api",
+      use: {
+        browserName: "chromium",
+        headless: true,
+      },
+      testMatch: ["**/booking*.spec.ts"],
     },
     {
       name: "swag-labs",

@@ -8,8 +8,8 @@
     "test:auth": "playwright test tests api/booking-auth.post.spec.ts",
     "test:post": "playwright test tests api/booking.post.spec.ts",
     "test:get": "playwright test tests api/booking.get.spec.ts",
-    "test:api": "playwright test tests api/booking*.spec.ts",
-    "test:e2e": "playwright test tests/e2e/*.spec.ts",
+    "test:api": "playwright test --project=api",
+    "test:e2e": "playwright test --project=swag-labs",
     "test:e2e:cart": "playwright test tests/e2e/swag-labs.cart.spec.ts",
     "test:e2e:login": "playwright test tests/e2e/swag-labs.login.spec.ts"
   },
