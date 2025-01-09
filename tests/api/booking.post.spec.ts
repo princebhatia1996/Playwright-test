@@ -4,7 +4,7 @@ import {
   createBooking,
   createBadRequestBooking,
   createServerErrorBooking,
-} from "../helpers/bookingHelper";
+} from "../../helpers/bookingHelper";
 
 test.describe("POST booking/ requests", () => {
   test("should return 200 and have created a single booking", async ({

@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { getToken, getInvalidToken } from "../helpers/authHelper";
+import { getToken, getInvalidToken } from "../../helpers/authHelper";
 
 test.describe("POST booking/auth requests", () => {
   test("should return 200 with an auth token", async ({ request }) => {

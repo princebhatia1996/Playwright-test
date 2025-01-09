@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { getStoredBookingId, getBooking } from "../helpers/bookingHelper";
+import { getStoredBookingId, getBooking } from "../../helpers/bookingHelper";
 
 test.describe("GET booking/ requests", () => {
   test("should return 200 and retrieve the previously created booking", async ({
