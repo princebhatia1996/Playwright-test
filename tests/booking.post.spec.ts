@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import { getToken } from "../helpers/authHelper";
 import {
   storeBookingId,
   createBooking,
