@@ -1,14 +1,17 @@
 {
-  "name": "my-playwright-project",
+  "name": "playwright_test",
   "version": "1.0.0",
-  "description": "A sample project using Playwright for end-to-end testing.",
+  "description": "Playwright test",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "test:auth": "playwright test tests/booking-auth.post.spec.ts",
-    "test:post": "playwright test tests/booking.post.spec.ts",
-    "test:get": "playwright test tests/booking.get.spec.ts",
-    "test:api": "playwright test tests/booking*.spec.ts"
+    "test:auth": "playwright test tests api/booking-auth.post.spec.ts",
+    "test:post": "playwright test tests api/booking.post.spec.ts",
+    "test:get": "playwright test tests api/booking.get.spec.ts",
+    "test:api": "playwright test tests api/booking*.spec.ts",
+    "test:e2e": "playwright test tests/e2e/*.spec.ts",
+    "test:e2e:cart": "playwright test tests/e2e/swag-labs.cart.spec.ts",
+    "test:e2e:login": "playwright test tests/e2e/swag-labs.login.spec.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.1",
