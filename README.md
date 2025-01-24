@@ -1,7 +1,7 @@
 # My Playwright Project
 
-This project is a sample setup for using Playwright with TypeScript.
-It has API and E2E UI tests which follow the page object model pattern.
+- This project is a sample setup for using Playwright with TypeScript.
+- It has API and E2E UI tests that follow the page object model pattern.
 
 ## Project Structure
 
