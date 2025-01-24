@@ -10,6 +10,3 @@ test-results.json
 
 # Node modules
 node_modules/
-
-# Environment variables
-.env
